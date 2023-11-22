@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Event Listings</title>
+</head>
+<body>
+    <header>
+        <h1>Discover Events</h1>
+        <div class="filters">
+            <label for="searchInput">Search:</label>
+            <input type="text" id="searchInput" placeholder="Search events...">
+            <label for="dateFilter">Date:</label>
+            <input type="date" id="dateFilter">
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="seminar">Seminar</option>
+                <option value="workshop">Workshop</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <label for="locationFilter">Location:</label>
+            <input type="text" id="locationFilter" placeholder="Enter location...">
+        </div>
+    </header>
+
+    <section id="eventList"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>

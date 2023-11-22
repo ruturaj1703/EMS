@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.filters label {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.label-search {
+    color: #3498db;
+    background-color: #ecf0f1;
+}
+
+.label-date {
+    color: #e74c3c;
+    background-color: #f5b7b1;
+}
+
+.label-category {
+    color: #2ecc71;
+    background-color: #a9dfbf;
+}
+
+.label-location {
+    color: #f39c12;
+    background-color: #fde3a7;
+}
+
+.filters input, .filters select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#eventList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.eventCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.eventCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.eventCard h2 {
+    color: #2c3e50;
+}
+
+.eventCard p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters input, .filters select {
+        width: 100%;
+    }
+
+    .eventCard {
+        width: 80%;
+    }
+}
